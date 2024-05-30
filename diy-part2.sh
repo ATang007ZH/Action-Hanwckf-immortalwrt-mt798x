@@ -19,4 +19,4 @@
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 rm -rf feeds/packages/utils/watchcat
-svn co https://github.com/openwrt/packages/trunk/utils/watchcat feeds/packages/utils/watchcat
+svn co https://github.com/openwrt/packages/tree/trunk/utils/watchcat feeds/packages/utils/watchcat
