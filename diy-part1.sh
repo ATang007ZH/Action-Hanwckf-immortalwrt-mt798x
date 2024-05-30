@@ -17,4 +17,3 @@
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #echo 'src-git watchcat https://github.com/openwrt/packages/tree/master/utils/watchcat' >>feeds.conf.default
-echo 'src-link watchcat package/utils/watchcat' >>feeds.conf.default
