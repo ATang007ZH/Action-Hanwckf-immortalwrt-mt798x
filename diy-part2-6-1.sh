@@ -21,3 +21,6 @@ sed -i 's/OpenWrt/HanimmWrt/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
+
+# Modify ppp-down, add sleep 3
+sed -i '$a\\\nsleep 3' package/network/services/ppp/files/lib/netifd/ppp-down
