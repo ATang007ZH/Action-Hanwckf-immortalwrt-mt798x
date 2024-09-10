@@ -67,7 +67,7 @@ jobs:
     - name: Update feeds
       run: |
          cd openwrt && ./scripts/feeds update -a
-         # 移除 openwrt feeds 自带的核心包
+# 移除 openwrt feeds 自带的核心包
          rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
          git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
 
