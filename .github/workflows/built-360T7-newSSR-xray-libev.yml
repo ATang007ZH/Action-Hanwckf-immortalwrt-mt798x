@@ -67,13 +67,16 @@ jobs:
     - name: Update feeds
       run: |
         cd openwrt && ./scripts/feeds update -a
-        rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
-        git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
-        rm -rf feeds/packages/lang/golang
-        git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
+        git clone -b master --single-branch https://github.com/immortalwrt/packages.git packages_master
+        rm -rf ./feeds/packages/lang/golang
+        mv ./packages_master/lang/golang ./feeds/packages/lang
+        rm -rf ./packages_master
 
     - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+      run: |
+        cd openwrt && ./scripts/feeds install -a
+        rm -rf package/helloworld
+        git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 
     - name: Load custom configuration
       run: |
