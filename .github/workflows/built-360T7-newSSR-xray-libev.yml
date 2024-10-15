@@ -75,8 +75,9 @@ jobs:
     - name: Install feeds
       run: |
         cd openwrt && ./scripts/feeds install -a
+        rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
         rm -rf package/helloworld
-        git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
+        git clone --depth=1 https://github.com/fw876/helloworld package/helloworld
 
     - name: Load custom configuration
       run: |
