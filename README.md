@@ -1,7 +1,7 @@
 云编译7981固件
 （p3terx 2024新版 基于ubuntu22.04）
 
-360T7主路由固件，含插件DDNS, SSR PLUS（2024-9-11已转用PASSWALL）
+360T7主路由固件，含插件DDNS, PASSWALL（用最新源码编译）。（2024-9-11之前科学插件为 SSR PLUS）
 
 JCG Q30 PRO极简AP固件。h大模板默认插件。
 
