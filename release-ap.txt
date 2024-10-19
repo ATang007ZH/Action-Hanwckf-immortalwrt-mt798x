@@ -1,3 +1,5 @@
 H大源码编译路由器固件
-极简AP版 默认IP地址：192.168.6.254
+immortalwrt21.02（闭源MTK驱动）极简AP版。
+含最新passwall源码编译模块。还有ddns、vlmcsd模块。
+默认IP地址：192.168.6.254
 密码：password
