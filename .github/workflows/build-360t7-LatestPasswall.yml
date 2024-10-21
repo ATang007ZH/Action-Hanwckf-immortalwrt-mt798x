@@ -83,6 +83,8 @@ jobs:
         rm -rf feeds/packages/net/chinadns-ng/
         rm -rf feeds/packages/net/sing-box/
         rm -rf feeds/packages/net/hysteria/
+        rm -rf feeds/packages/net/shadowsocksr-libev/
+        rm -rf feeds/packages/net/shadowsocks-rust/
         git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
         git clone https://github.com/xiaorouji/openwrt-passwall-packages package/luci-app-passwall-packages
          
